@@ -7,7 +7,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
-  { label: "Blog", href: "#blog" },
+  // { label: "Blog", href: "#blog" },
 ];
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
     >
       <div className="container-narrow flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="font-heading text-2xl font-bold tracking-tight text-foreground">
-          awwa
+          Ghayyas Qureshi
         </a>
 
         {/* Desktop Nav */}
