@@ -21,11 +21,11 @@ const Hero = () => {
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="absolute left-0 xl:-left-[20%] -top-[8%] lg:top-[15%] z-20"
+            className="absolute left-0 xl:-left-[4vw] -top-[8%] lg:top-[4vh] z-20"
           >
-            <div className="relative cream-dark border border-border rounded-[40px] px-6 py-6 md:px-14 md:py-10 lg:px-16 lg:py-12 overflow-hidden">
+            <div className="relative bg-cream-dark/30 border border-border rounded-[40px] px-6 py-6 md:px-14 md:py-10 lg:px-6 lg:py-4 overflow-hidden">
               <div className="absolute inset-0 opacity-25">
-                <svg width="100%" height="100%" className="text-sand">
+                <svg width="100%" height="100%" className="text-charcoal">
                   <pattern id="topo-left" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
                     <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" strokeWidth="0.5" />
                     <circle cx="30" cy="30" r="15" fill="none" stroke="currentColor" strokeWidth="0.5" />
@@ -69,7 +69,7 @@ const Hero = () => {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="absolute right-[28%] lg:right-[30%] xl:right-[32%] top-[20%] -right-[4%] lg:top-[8%] z-20"
+            className="absolute right-[28vw] lg:right-[30%] xl:right-[10vw] top-[20vw] -right-[4vw] lg:top-[8%] z-20"
           >
             <div className="bg-background border border-border rounded-full px-5 py-3 md:px-6 md:py-4 flex items-center gap-3 shadow-sm">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-foreground text-primary-foreground flex items-center justify-center">
@@ -88,11 +88,11 @@ const Hero = () => {
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="absolute right-0 xl:-right-[20%] bottom-[10%] lg:bottom-[14%] z-20"
+            className="absolute -right-[2vw] xl:-right-[3vw] bottom-[6vh] lg:bottom-[8vh] z-20"
           >
-            <div className="relative bg-cream-dark border border-border rounded-[40px] px-10 py-8 md:px-14 md:py-10 lg:px-16 lg:py-12 overflow-hidden">
+            <div className="relative bg-cream-dark/30 border border-border rounded-[40px] px-10 py-8 md:px-14 md:py-10 lg:px-8 lg:py-12 overflow-hidden">
               <div className="absolute inset-0 opacity-25">
-                <svg width="100%" height="100%" className="text-sand">
+                <svg width="100%" height="100%" className="text-charcoal">
                   <pattern id="topo-right" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
                     <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" strokeWidth="0.5" />
                     <circle cx="30" cy="30" r="15" fill="none" stroke="currentColor" strokeWidth="0.5" />
@@ -115,7 +115,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="absolute left-[8%] lg:left-[12%] -bottom-[2%] -left-[2%] lg:bottom-[16%] z-20"
+            className="absolute left-[8%] lg:left-[12%] -bottom-[6vh] -left-[2vw] lg:bottom-[16%] z-20"
           >
             <div className="bg-background border border-border rounded-full px-5 py-3 flex items-center gap-3 shadow-sm">
               <div>
