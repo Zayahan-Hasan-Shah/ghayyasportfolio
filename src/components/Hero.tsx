@@ -73,7 +73,7 @@ const Hero = () => {
           >
             <div className="bg-background border border-border rounded-full px-5 py-3 md:px-6 md:py-4 flex items-center gap-3 shadow-sm">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-foreground text-primary-foreground flex items-center justify-center">
-                <span className="text-lg md:text-xl font-heading font-bold">10</span>
+                <span className="text-lg md:text-xl font-heading font-bold">8</span>
               </div>
               <div className="text-xs md:text-sm leading-tight">
                 <span className="font-semibold text-foreground">Years Of</span>
@@ -105,7 +105,7 @@ const Hero = () => {
               <h2 className="relative z-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-bold leading-tight text-foreground uppercase tracking-wide">
                 A Creative
                 <br />
-                UX/UI Designer
+                Media Profesional
               </h2>
             </div>
           </motion.div>
@@ -119,7 +119,7 @@ const Hero = () => {
           >
             <div className="bg-background border border-border rounded-full px-5 py-3 flex items-center gap-3 shadow-sm">
               <div>
-                <span className="text-xl font-heading font-bold text-foreground">325+</span>
+                <span className="text-xl font-heading font-bold text-foreground">250+</span>
                 <p className="text-xs text-muted-foreground">Happy Clients</p>
               </div>
               <div className="flex -space-x-2">

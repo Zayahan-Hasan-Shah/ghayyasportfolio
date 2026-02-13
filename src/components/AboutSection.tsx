@@ -38,7 +38,7 @@ const AboutSection = () => {
             Why You Hire Me?
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto text-sm md:text-base">
-            Creative problem-solver & UI/UX Designer focused on crafting clean, user-friendly experiences.
+            Creative problem-solver & Media Professional focused on crafting clean, user-friendly experiences.
           </p>
         </motion.div>
 
@@ -48,11 +48,11 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-4 space-y-6 mb-6"
           >
-            <p className="text-sm leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
-              My name is Ghayyas Qureshi. I am a UI/UX Designer. I enjoy creating
-              user-centric, delightful, and human experiences. I have 10 years
-              of experience in this field. I combine my love for creativity with
-              a deep understanding of functionality and usability.
+            <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
+             I’m Ghayaas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
+            </p>
+            <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+             With strong expertise in event management, I have successfully planned and executed events that blend creativity with flawless coordination, ensuring impactful experiences from start to finish. Alongside my skills in video editing and marketing strategy, I combine artistic vision with strategic thinking to create content and campaigns that not only stand out visually but leave a lasting impression.
             </p>
 
             <div className="pt-4 border-t  text-center border-border">

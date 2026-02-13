@@ -38,7 +38,7 @@ const ContactSection = () => {
             </p>
 
             <div className="mt-10 space-y-6">
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} strokeWidth={1.5} />
                 </div>
@@ -48,6 +48,21 @@ const ContactSection = () => {
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     205 Skyline Tower, New York
+                  </p>
+                </div>
+              </div> */}
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
+                  <MapPin size={18} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="font-medium text-sm text-foreground">
+                    Instagram
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    <a target="_blank" href="https://www.instagram.com/ghayyasqureshi?igsh=MXVtYjMwbXM3NGJkbw==">
+                      ghayyas qureshi
+                    </a>
                   </p>
                 </div>
               </div>
@@ -61,7 +76,9 @@ const ContactSection = () => {
                     Email Address
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    hello@albertwilson.com
+                    <a href="mailto:ghayyas1@gmail.com">
+                      ghayyas1@gmail.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -73,8 +90,8 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium text-sm text-foreground">Phone</p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    <a href="tel:923361220181">
-                      +92 336 1220181
+                    <a href="tel:923131825065">
+                      +92 313 1825065
                     </a>
                   </p>
                 </div>

@@ -3,10 +3,10 @@ import { useScrollAnimation } from "..//hooks/useScrollAnimation";
 import { Award, Smile, Clock, Trophy } from "lucide-react";
 
 const stats = [
-  { icon: Trophy, value: "250+", label: "Successful Projects" },
-  { icon: Smile, value: "180+", label: "Satisfied Clients" },
-  { icon: Clock, value: "10+", label: "Years of Experience" },
-  { icon: Award, value: "15+", label: "Award Winning" },
+  { icon: Trophy, value: "100+", label: "Successful Projects" },
+  { icon: Smile, value: "100+", label: "Satisfied Clients" },
+  { icon: Clock, value: "8+", label: "Years of Experience" },
+  { icon: Award, value: "12+", label: "Award Winning" },
 ];
 
 const StatsBar = () => {
