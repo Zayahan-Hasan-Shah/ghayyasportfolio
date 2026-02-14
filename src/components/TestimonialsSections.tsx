@@ -2,10 +2,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollAnimation } from "..//hooks/useScrollAnimation";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import testimonial2 from "..//assets/testimonial-2.jpg";
 import clien1 from "../assets/suhaliha_client.jpeg";
 import client2 from "../assets/talha_client.jpeg";
 import client3 from "../assets/sameer_magsi_client.jpeg";
+import client4 from "../assets/anum_client.png";
+import client5 from "../assets/dua_client.png";
+import client6 from "../assets/aun_client.jpeg";
 
 const testimonials = [
   {
@@ -27,10 +29,22 @@ const testimonials = [
     text: "I’ve been working with him for the past 6 years, and he’s truly a genuine and inspiring photographer. His positive nature, optimism, and passion for creativity shine through in every photo he captures. A talented professional and a great person to work with.",
   },
   {
-    name: "Benjamin Clarke",
-    role: "Marketing Director",
-    image: testimonial2,
-    text: "Working with Albert was a game-changer for our product. His intuitive approach to UX design helped us increase user engagement by 40%. Highly recommended for any creative project.",
+    name: "Anum",
+    role: "Client",
+    image: client4,
+    text: " It has been a really smooth experience with you and your team! I loved your work but more than that, we absolutely lovedddd the teasers and promo!!!! Such a good job. Hope to work with you guys in future as well! Keep up the good work, best wishes",
+  },
+  {
+    name: "Dua",
+    role: "Client",
+    image: client5,
+    text: "I just wanted to thank you for the amazing work you did Ghayyas. The photos turned out absolutely beautiful. You captured every moment so perfectly that made the day so special. We are happy with the results and would definitely recommend you to others",
+  },
+  {
+    name: "Aun Ali",
+    role: "Client",
+    image: client6,
+    text: "Very professional to work with & understands the vision clearly delivers quality photos on time with great attention to detail smooth communication and a reliable photographer overall.",
   },
 ];
 
@@ -88,7 +102,7 @@ const TestimonialsSection = () => {
                   <img
                     src={testimonials[current].image}
                     alt={testimonials[current].name}
-                    className="w-14 h-14 rounded-full object-cover"
+                    className="w-12 h-20 rounded-full object-cover"
                     loading="lazy"
                   />
                   <div>
