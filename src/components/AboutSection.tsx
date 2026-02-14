@@ -1,23 +1,43 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "..//hooks/useScrollAnimation";
-import { Monitor, Smartphone, Globe } from "lucide-react";
-import aboutPhoto from "..//assets/about-photo.jpg";
+import { Camera, Video, Mic, Users, Lightbulb, Settings } from "lucide-react";
 
-const services = [
+// Professional media professional image URL
+const professionalPhoto = "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+
+const leftservices = [
   {
-    icon: Monitor,
-    title: "Website Design",
-    desc: "I design and build beautiful, responsive websites that deliver results.",
+    icon: Video,
+    title: "Production & Creative",
+    desc: "Photography, Videography & Cinematography\nLighting setups (studio & natural)\nColor grading & correction\nSound design & audio syncing\nScriptwriting & storytelling\nGraphic Designing\nCreative direction",
   },
   {
-    icon: Smartphone,
-    title: "Mobile App Design",
-    desc: "I create beautiful and intuitive App designs that users love.",
+    icon: Users,
+    title: "Marketing & Campaigns",
+    desc: "Campaign Designing & Execution\nEvent Management\nInfluencer Marketing\nDigital Marketing Strategy\Social Media Content Creation (Instagram, YouTube, TikTok)",
   },
   {
-    icon: Globe,
-    title: "Web App Design",
-    desc: "I build scalable, user-friendly web applications for businesses.",
+    icon: Settings,
+    title: "Technical Tools",
+    desc: "Adobe Premiere Pro\nAdobe Photoshop & Illustrator\nLightroom CC\nCapCut\nSnapseed\nCanva",
+  },
+];
+
+const rightServices = [
+  {
+    icon: Camera,
+    title: "Equipment Handling",
+    desc: "Sony A7III, A6400, A6300\nCanon M50, Canon 6D",
+  },
+  {
+    icon: Lightbulb,
+    title: "Professional Strengths",
+    desc: "Client communication\nTeam collaboration\nDeadline management\nProblem-solving in fast-paced environments\nAdaptability & self-learning",
+  },
+  {
+    icon: Mic,
+    title: "Content & Media Presence",
+    desc: "Content Creation\nComfortable and confident in front of camera\nOn-camera presentation & performance\nAdaptability & self-learning",
   },
 ];
 
@@ -43,59 +63,32 @@ const AboutSection = () => {
         </motion.div>
 
         <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-4 space-y-6 mb-6"
-          >
-            <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
-             I’m Ghayyas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
-            </p>
-            <p className="text-sm text-center leading-relaxed text-muted-foreground ">
-             With strong expertise in event management, I have successfully planned and executed events that blend creativity with flawless coordination, ensuring impactful experiences from start to finish. Alongside my skills in video editing and marketing strategy, I combine artistic vision with strategic thinking to create content and campaigns that not only stand out visually but leave a lasting impression.
-            </p>
+          initial={{ opacity: 0, x: -40 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="lg:col-span-4 space-y-6 mb-6"
+        >
+          <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
+            I’m Ghayyas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
+          </p>
+          <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+            With strong expertise in event management, I have successfully planned and executed events that blend creativity with flawless coordination, ensuring impactful experiences from start to finish. Alongside my skills in video editing and marketing strategy, I combine artistic vision with strategic thinking to create content and campaigns that not only stand out visually but leave a lasting impression.
+          </p>
 
-            <div className="pt-4 border-t  text-center border-border">
-              <p className="font-heading font-semibold text-lg text-foreground">
-                Ghayyas Qureshi
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                UI/UX Designer
-              </p>
-              <p className="font-heading italic text-lg text-foreground/50 mt-3">
-                Ghayyas Qureshi
-              </p>
-            </div>
-          </motion.div>
+          <div className="pt-4 border-t  text-center border-border">
+            <p className="font-heading font-semibold text-lg text-foreground">
+              Ghayyas Qureshi
+            </p>
+            <p className="text-xs text-muted-foreground mt-1">
+              UI/UX Designer
+            </p>
+            <p className="font-heading italic text-lg text-foreground/50 mt-3">
+              Ghayyas Qureshi
+            </p>
+          </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left - Bio */}
-          {/* <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:col-span-4 space-y-6"
-          >
-            <p className="text-sm leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
-              My name is Ghayyas Qureshi. I am a UI/UX Designer. I enjoy creating
-              user-centric, delightful, and human experiences. I have 10 years
-              of experience in this field. I combine my love for creativity with
-              a deep understanding of functionality and usability.
-            </p>
-
-            <div className="pt-4 border-t border-border">
-              <p className="font-heading font-semibold text-lg text-foreground">
-                Ghayyas Qureshi
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                UI/UX Designer
-              </p>
-              <p className="font-heading italic text-lg text-foreground/50 mt-3">
-                Ghayyas Qureshi
-              </p>
-            </div>
-          </motion.div> */}
-
           {/* Right - Services */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -103,7 +96,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="lg:col-span-4 space-y-6"
           >
-            {services.map((service, i) => (
+            {leftservices.map((service, i) => (
               <motion.div
                 key={service.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -118,7 +111,7 @@ const AboutSection = () => {
                   <h3 className="font-heading font-semibold text-foreground text-base">
                     {service.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed whitespace-pre-line">
                     {service.desc}
                   </p>
                 </div>
@@ -134,10 +127,10 @@ const AboutSection = () => {
             className="lg:col-span-4 flex justify-center"
           >
             <div className="relative">
-              <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-secondary">
+              <div className="w-60 h-80 md:w-72 md:h-96 rounded-full overflow-hidden border-4 border-secondary">
                 <img
-                  src={aboutPhoto}
-                  alt="Creative workspace"
+                  src={professionalPhoto}
+                  alt="Ghayyas Qureshi - Media Professional"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -157,7 +150,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="lg:col-span-4 space-y-6"
           >
-            {services.map((service, i) => (
+            {rightServices.map((service, i) => (
               <motion.div
                 key={service.title}
                 initial={{ opacity: 0, y: 20 }}
@@ -172,7 +165,7 @@ const AboutSection = () => {
                   <h3 className="font-heading font-semibold text-foreground text-base">
                     {service.title}
                   </h3>
-                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed whitespace-pre-line">
                     {service.desc}
                   </p>
                 </div>
