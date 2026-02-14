@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import testimonial2 from "..//assets/testimonial-2.jpg";
 import clien1 from "../assets/suhaliha_client.jpeg";
 import client2 from "../assets/talha_client.jpeg";
+import client3 from "../assets/sameer_magsi_client.jpeg";
 
 const testimonials = [
   {
@@ -18,6 +19,12 @@ const testimonials = [
     role: "Client",
     image: client2,
     text: "Ghayyas and team provided excellent photography services with great customer care. Highly recommend!",
+  },
+  {
+    name: "Sameer Magsi",
+    role: "Client",
+    image: client3,
+    text: "I’ve been working with him for the past 6 years, and he’s truly a genuine and inspiring photographer. His positive nature, optimism, and passion for creativity shine through in every photo he captures. A talented professional and a great person to work with.",
   },
   {
     name: "Benjamin Clarke",
