@@ -2,15 +2,21 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollAnimation } from "..//hooks/useScrollAnimation";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import testimonial1 from "..//assets/testimonial-1.jpg";
 import testimonial2 from "..//assets/testimonial-2.jpg";
+import clien1 from "../assets/suhaliha_client.jpeg";
 
 const testimonials = [
   {
-    name: "Harry Abraham",
-    role: "CEO, Tech Company",
-    image: testimonial1,
-    text: "Albert is an exceptional designer. His attention to detail and creative problem-solving transformed our brand identity completely. His work exceeded all our expectations and the results speak for themselves.",
+    name: "Suhaliha",
+    role: "Client",
+    image: clien1,
+    text: "Very professional  photographer he does amazing headshots really showed me how to show more personality in a picture.ghayyas your great motivator and seemed genuinely passionate about photography.",
+  },
+  {
+    name: "Talha",
+    role: "Client",
+    image: clien1,
+    text: "Ghayyas and team provided excellent photography services with great customer care. Highly recommend!",
   },
   {
     name: "Benjamin Clarke",
@@ -43,7 +49,7 @@ const TestimonialsSection = () => {
               Says About Me
             </h2>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-md">
-              I take pride in delivering exceptional design solutions that exceed client expectations. 
+              I take pride in delivering exceptional design solutions that exceed client expectations.
               Here's what some of my clients have to say about working with me.
             </p>
             <a

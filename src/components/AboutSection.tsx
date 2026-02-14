@@ -49,7 +49,7 @@ const AboutSection = () => {
             className="lg:col-span-4 space-y-6 mb-6"
           >
             <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
-             I’m Ghayaas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
+             I’m Ghayyas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
             </p>
             <p className="text-sm text-center leading-relaxed text-muted-foreground ">
              With strong expertise in event management, I have successfully planned and executed events that blend creativity with flawless coordination, ensuring impactful experiences from start to finish. Alongside my skills in video editing and marketing strategy, I combine artistic vision with strategic thinking to create content and campaigns that not only stand out visually but leave a lasting impression.
