@@ -4,6 +4,7 @@ import { useScrollAnimation } from "..//hooks/useScrollAnimation";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import testimonial2 from "..//assets/testimonial-2.jpg";
 import clien1 from "../assets/suhaliha_client.jpeg";
+import client2 from "../assets/talha_client.jpeg";
 
 const testimonials = [
   {
@@ -15,7 +16,7 @@ const testimonials = [
   {
     name: "Talha",
     role: "Client",
-    image: clien1,
+    image: client2,
     text: "Ghayyas and team provided excellent photography services with great customer care. Highly recommend!",
   },
   {
