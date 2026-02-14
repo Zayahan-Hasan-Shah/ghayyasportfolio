@@ -8,6 +8,8 @@ import client3 from "../assets/sameer_magsi_client.jpeg";
 import client4 from "../assets/anum_client.png";
 import client5 from "../assets/dua_client.png";
 import client6 from "../assets/aun_client.jpeg";
+import client7 from "../assets/abiha_client.jpeg";
+import client8 from "../assets/anum_client.png";
 
 const testimonials = [
   {
@@ -45,6 +47,18 @@ const testimonials = [
     role: "Client",
     image: client6,
     text: "Very professional to work with & understands the vision clearly delivers quality photos on time with great attention to detail smooth communication and a reliable photographer overall.",
+  },
+  {
+    name: "Abiha",
+    role: "Client",
+    image: client7,
+    text: "Needed professional to execute my shoot at Expo Karachi and I got one. This is why you’re a professional . The shoot really shows off all your skills Looking forward for more projects. Highly recommended!.",
+  },
+  {
+    name: "Maliha",
+    role: "Client",
+    image: client8,
+    text: "Ghayyas is a true professional. Not only is he an incredibly skilled photographer, but he is also polite and highly cooperative. Throughout the event, he felt like a member of the family. Keep up the great work, and I wish you continued success!",
   },
 ];
 
