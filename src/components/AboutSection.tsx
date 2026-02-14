@@ -80,7 +80,7 @@ const AboutSection = () => {
               Ghayyas Qureshi
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              UI/UX Designer
+              Media Professional
             </p>
             <p className="font-heading italic text-lg text-foreground/50 mt-3">
               Ghayyas Qureshi
