@@ -3,18 +3,25 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { Cake, Briefcase, Heart, Sparkles } from "lucide-react";
 
 // Import all memory images
-import birthday1 from "../assets/birthday_1.jpeg";
-import birthday2 from "../assets/birthday_2.jpeg";
-import birthday3 from "../assets/birthday_3.jpeg";
+import birthday1 from "../assets/birthday_1.jpg";
+import birthday2 from "../assets/birthday_2.jpg";
+import birthday3 from "../assets/birthday_3.jpg";
 import birthday4 from "../assets/birthday_4.jpeg";
-import birthday5 from "../assets/birthday_5.jpeg";
-import farewell1 from "../assets/farewell_1.jpeg";
-import farewell2 from "../assets/farewell_2.jpeg";
+import birthday5 from "../assets/birthday_5.jpg";
+import farewell1 from "../assets/farewell_1.jpg";
+import farewell2 from "../assets/farewell_2.jpg";
 import farewell3 from "../assets/farewell_3.jpeg";
-import farewell4 from "../assets/farewell_4.jpeg";
+import farewell4 from "../assets/farewell_4.jpg";
 import corporate1 from "../assets/corporate_1.jpeg";
-import corporate2 from "../assets/corporate_2.jpeg";
-import corporate3 from "../assets/corporate_3.jpeg";
+import corporate2 from "../assets/corporate_2.jpg";
+import corporate3 from "../assets/corporate_3.jpg";
+import wed1 from "../assets/wed_1.jpg";
+import wed2 from "../assets/wed_2.jpg";
+import wed3 from "../assets/wed_3.jpg";
+import wed4 from "../assets/wed_4.jpg";
+import wed5 from "../assets/wed_5.jpg";
+import wed6 from "../assets/wed_6.jpg";
+import wed7 from "../assets/wed_7.jpg";
 
 const memories = [
   {
@@ -37,6 +44,13 @@ const memories = [
     icon: Heart,
     images: [farewell1, farewell2, farewell3, farewell4],
     color: "from-purple-500/20 to-purple-600/20"
+  },
+  {
+    id: 4,
+    category: "Wedding Memories",
+    icon: Heart,
+    images: [wed1, wed2, wed3, wed4, wed5, wed6, wed7],
+    color: "from-yellow-500/20 to-yellow-600/20"
   }
 ];
 
