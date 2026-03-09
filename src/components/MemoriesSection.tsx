@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { Cake, Briefcase, Heart, Sparkles } from "lucide-react";
 
+ const CAROUSEL_GAP_PX = 24;
+ const CARD_W_PX = 350;
+
 // Import all memory images
 import birthday1 from "../assets/birthday_1.jpg";
 import birthday2 from "../assets/birthday_2.jpg";
@@ -115,9 +118,15 @@ const MemoriesSection = () => {
 
               {/* Image Carousel with Modern Layout */}
               <div className="relative overflow-hidden rounded-2xl">
+                {(() => {
+                  const travel = (CARD_W_PX + CAROUSEL_GAP_PX) * category.images.length;
+                  const direction = categoryIndex % 2 === 0 ? -1 : 1;
+                  const xFrames = direction === -1 ? [0, -travel] : [-travel, 0];
+
+                  return (
                 <motion.div
-                  initial={{ x: 0 }}
-                  animate={{ x: categoryIndex % 2 === 0 ? -100 * category.images.length : 100 * category.images.length }}
+                  initial={{ x: xFrames[0] }}
+                  animate={{ x: xFrames }}
                   transition={{
                     x: {
                       repeat: Infinity,
@@ -126,7 +135,7 @@ const MemoriesSection = () => {
                       ease: "linear"
                     }
                   }}
-                  className="flex gap-6"
+                  className="flex gap-6 will-change-transform"
                 >
                   {/* Duplicate images for seamless loop */}
                   {[...category.images, ...category.images].map((image, imageIndex) => (
@@ -145,7 +154,7 @@ const MemoriesSection = () => {
                         transition: { duration: 0.3 }
                       }}
                       className="flex-shrink-0 group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer"
-                      style={{ width: "350px", height: "50vh" }} // Increased sizes
+                      style={{ width: `${CARD_W_PX}px`, height: "50vh" }}
                     >
                       {/* Image Container with Overlay */}
                       <div className="relative w-full h-full overflow-hidden rounded-2xl">
@@ -185,10 +194,12 @@ const MemoriesSection = () => {
                     </motion.div>
                   ))}
                 </motion.div>
+                  );
+                })()}
               </div>
 
               {/* View More Button */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={isVisible ? { opacity: 1 } : {}}
                 transition={{ duration: 0.6, delay: categoryIndex * 0.2 + 0.8 }}
@@ -201,13 +212,13 @@ const MemoriesSection = () => {
                 >
                   View All {category.category}
                 </motion.button>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           ))}
         </div>
 
         {/* Bottom Decorative Elements */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={isVisible ? { opacity: 1 } : {}}
           transition={{ duration: 1, delay: 1 }}
@@ -231,7 +242,7 @@ const MemoriesSection = () => {
             ))}
           </div>
           <Sparkles className="w-6 h-6 text-coral animate-spin" />
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

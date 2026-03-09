@@ -68,10 +68,10 @@ const PortfolioSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground">
-            My Latest Work
+            Campaign Work
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto text-sm md:text-base">
-            Explore my recent projects showcasing creativity, innovation and results-driven design solutions.
+            Explore my recent campaigns showcasing creativity, innovation and results-driven design solutions.
           </p>
         </motion.div>
 
