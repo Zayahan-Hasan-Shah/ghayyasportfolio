@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const ContactSection = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const isFormEnabled = false;
   const [formData, setFormData] = useState({
     firstName: "",
     email: "",
@@ -100,70 +101,105 @@ const ContactSection = () => {
           </motion.div>
 
           {/* Right - Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  value={formData.firstName}
+          {isFormEnabled ? (
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={isVisible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    value={formData.firstName}
+                    onChange={(e) =>
+                      setFormData({ ...formData, firstName: e.target.value })
+                    }
+                    className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+                  />
+                  <input
+                    type="email"
+                    placeholder="My Email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
+                    className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+                  />
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input
+                    type="tel"
+                    placeholder="Your Phone"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
+                    className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Choose Subject"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
+                    className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+                  />
+                </div>
+                <textarea
+                  rows={5}
+                  placeholder="Message..."
+                  value={formData.message}
                   onChange={(e) =>
-                    setFormData({ ...formData, firstName: e.target.value })
+                    setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+                  className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all resize-none"
                 />
-                <input
-                  type="email"
-                  placeholder="My Email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
-                />
+                <button
+                  type="submit"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-foreground text-primary-foreground text-sm font-medium hover:bg-charcoal-light transition-all duration-300"
+                >
+                  <Send size={16} />
+                  Lets Connect
+                </button>
+              </form>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={isVisible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="rounded-3xl border border-border bg-secondary/20 p-7 md:p-9"
+            >
+              <h3 className="text-xl md:text-2xl font-heading font-semibold text-foreground">
+                Call me directly
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                For a quick response, call or WhatsApp. I’ll get back to you as soon as possible.
+              </p>
+
+              <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a
+                  href="tel:923131825065"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground text-primary-foreground px-6 py-3 text-sm font-medium hover:bg-charcoal-light transition-all duration-300"
+                >
+                  <Phone size={16} />
+                  Call Now
+                </a>
+                <a
+                  href="https://wa.me/923131825065"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-medium text-foreground hover:bg-secondary/40 transition-all duration-300"
+                >
+                  <Send size={16} />
+                  WhatsApp
+                </a>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  type="tel"
-                  placeholder="Your Phone"
-                  value={formData.phone}
-                  onChange={(e) =>
-                    setFormData({ ...formData, phone: e.target.value })
-                  }
-                  className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
-                />
-                <input
-                  type="text"
-                  placeholder="Choose Subject"
-                  value={formData.subject}
-                  onChange={(e) =>
-                    setFormData({ ...formData, subject: e.target.value })
-                  }
-                  className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
-                />
-              </div>
-              <textarea
-                rows={5}
-                placeholder="Message..."
-                value={formData.message}
-                onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
-                }
-                className="w-full px-5 py-3 rounded-xl bg-secondary/50 border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all resize-none"
-              />
-              <button
-                type="submit"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-foreground text-primary-foreground text-sm font-medium hover:bg-charcoal-light transition-all duration-300"
-              >
-                <Send size={16} />
-                Lets Connect
-              </button>
-            </form>
-          </motion.div>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
