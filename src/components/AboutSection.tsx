@@ -69,10 +69,29 @@ const AboutSection = () => {
           className="lg:col-span-4 space-y-6 mb-6"
         >
           <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
-            I’m Ghayyas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
+            I’m Ghayyas Qureshi, a Creative Media, Marketing & Content Specialist with over 5 years of experience in content production, digital marketing, campaign execution, and influencer driven storytelling. I specialize in transforming creative ideas into high-impact visuals, engaging campaigns, and digital experiences that strengthen brand identity and connect with modern audiences.
           </p>
+          {/* <p className="text-sm text-center leading-relaxed text-muted-foreground first-letter:text-4xl first-letter:font-heading first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-foreground">
+            I’m Ghayyas Qureshi, a BS Media Studies graduate and CEO of GCH, a 360° marketing company built on creativity, precision, and execution. My core strength lies in production and photography, where I bring concepts to life through compelling visuals and seamless storytelling. From managing full-scale productions to capturing powerful moments behind the lens, I focus on delivering high-quality, detail-driven work that elevates every project.
+          </p> */}
           <p className="text-sm text-center leading-relaxed text-muted-foreground ">
-            With strong expertise in event management, I have successfully planned and executed events that blend creativity with flawless coordination, ensuring impactful experiences from start to finish. Alongside my skills in video editing and marketing strategy, I combine artistic vision with strategic thinking to create content and campaigns that not only stand out visually but leave a lasting impression.
+            My expertise goes beyond photography and videography .I work across the complete creative process, including campaign strategy, brand storytelling, production, editing, content marketing, and influencer collaborations. From fashion shoots and product campaigns to awareness projects and social media activations, I combine creativity with strategic thinking to create content that is visually powerful, audience-focused, and results-driven.
+          </p>
+
+          <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+            As a content creator and influencer, I have built a strong digital presence across Instagram and YouTube, generating millions of views through storytelling-based content, creative campaigns, and engaging visual experiences. My understanding of audience behavior, platform trends, and digital engagement allows me to create content that not only captures attention but leaves a lasting impact.
+          </p>
+
+          <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+            I’m equally comfortable behind and in front of the camera, with experience in acting, hosting, modeling, on-camera appearances, and influencer style content creation. Whether leading a production, presenting on screen, or collaborating with brands, I bring confidence, creativity, adaptability, and authenticity to every project.
+          </p>
+
+          <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+            Over the years, I have contributed to TVCs, DVCs, talk shows, short films, corporate productions, branded campaigns, and influencer collaborations while working with creative teams, businesses, and clients across multiple industries. With a strong foundation in both production and marketing, I approach every project with a balance of artistic vision, technical precision, and brand-focused execution.
+          </p>
+
+          <p className="text-sm text-center leading-relaxed text-muted-foreground ">
+            My goal is simple to create meaningful content, campaigns, and visual experiences that inspire audiences, elevate brands, and stand out in today’s fast moving digital world.
           </p>
 
           <div className="pt-4 border-t  text-center border-border">

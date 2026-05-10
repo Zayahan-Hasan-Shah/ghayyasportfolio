@@ -73,7 +73,7 @@ const Hero = () => {
           >
             <div className="bg-background border border-border rounded-full px-5 py-3 md:px-6 md:py-4 flex items-center gap-3 shadow-sm">
               <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-foreground text-primary-foreground flex items-center justify-center">
-                <span className="text-lg md:text-xl font-heading font-bold">8</span>
+                <span className="text-lg md:text-xl font-heading font-bold">5</span>
               </div>
               <div className="text-xs md:text-sm leading-tight">
                 <span className="font-semibold text-foreground">Years Of</span>

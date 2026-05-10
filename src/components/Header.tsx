@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import cvPdf from "../assets/CV/Ghayyas qureshi_Creative Manager.pdf";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -49,12 +50,21 @@ const Header = () => {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full border border-foreground text-sm font-medium text-foreground hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
-        >
-          Contact Me
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href={cvPdf}
+            download
+            className="inline-flex items-center px-6 py-2.5 rounded-full border border-foreground text-sm font-medium text-foreground hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+          >
+            Download CV
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center px-6 py-2.5 rounded-full border border-foreground text-sm font-medium text-foreground hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+          >
+            Contact Me
+          </a>
+        </div>
 
         {/* Mobile Toggle */}
         <button
@@ -86,6 +96,13 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
+              <a
+                href={cvPdf}
+                download
+                className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-foreground text-sm font-medium text-foreground hover:bg-foreground hover:text-primary-foreground transition-all mt-2"
+              >
+                Download CV
+              </a>
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
