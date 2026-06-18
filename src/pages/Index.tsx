@@ -4,6 +4,7 @@ import StatsBar from "../components/StatsBar";
 import AboutSection from "../components/AboutSection";
 import InfluencerSection from "../components/InfluencerSection";
 import PortfolioSection from "../components/PortfolioSection";
+import ReportsSection from "../components/ReportsSection";
 import GallerySection from "../components/GallerySection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -23,6 +24,7 @@ const Index = () => {
         <MemoriesSection />
         <BrandSection />
         <PortfolioSection />
+        <ReportsSection />
         <TestimonialsSection />
         <GallerySection />
         <ContactSection />

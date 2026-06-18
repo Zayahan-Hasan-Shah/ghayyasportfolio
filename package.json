@@ -30,6 +30,7 @@
     "recharts": "^3.7.0",
     "root": "github:tanstack/react-query",
     "sonner": "^2.0.7",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss-animate": "^1.0.7",
     "tanstack": "^1.0.3",
     "vaul": "^1.1.2",
