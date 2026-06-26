@@ -109,7 +109,7 @@ const PortfolioSection = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                     {projects[current].desc}
                   </p>
-                  <a
+                  {/* <a
                     href="#"
                     className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-coral transition-colors group"
                   >
@@ -118,7 +118,7 @@ const PortfolioSection = () => {
                       size={16}
                       className="group-hover:translate-x-1 transition-transform"
                     />
-                  </a>
+                  </a> */}
                 </div>
               </motion.div>
             </AnimatePresence>
