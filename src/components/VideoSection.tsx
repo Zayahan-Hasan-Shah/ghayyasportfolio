@@ -7,7 +7,7 @@ interface VideoItem {
   id: number;
   title: string;
   driveId: string;
-  category: "Ads" | "Media Gala";
+  category: "Ads" | "Media Gala" | "Reel";
   description: string;
   thumbnail: string;
 }
@@ -15,49 +15,89 @@ interface VideoItem {
 const videosData: VideoItem[] = [
   {
     id: 1,
-    title: "Commercial Advertising Campaign",
+    title: "Media Gala Highlights",
     driveId: "1KqTXq8_k9UKp9X5-VC5H9OGdBK9te61Y",
-    category: "Ads",
+    category: "Media Gala",
     description: "Professional advertising and promotional campaign reels showcasing creative concept execution and audience targeting.",
     thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
-    title: "Media Gala - Red Carpet & Arrivals",
+    title: "Reel - 1",
     driveId: "11wyAHiPRoC_nEMiaj94LYLjmieHSM2PB",
-    category: "Media Gala",
+    category: "Reel",
     description: "Coverage showcasing the arrival of distinguished guests, red carpet interactions, and grand opening ceremonies.",
     thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
-    title: "Media Gala - Main Stage Event",
+    title: "Reel - 2",
     driveId: "1zBUZfXmNrb09WYiOstsJi0PRFl7VlZ6M",
-    category: "Media Gala",
+    category: "Reel",
     description: "Event highlights, keynote speeches, awards ceremonies, and executive presentations live on the main stage.",
     thumbnail: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
-    title: "Media Gala - Performances & Shows",
+    title: "Reel - 3",
     driveId: "1u-2EctGzPYyJUkphYRNT7vcDskA2GC68",
-    category: "Media Gala",
+    category: "Reel",
     description: "Highlights of the artistic and musical performances, cultural segments, and live entertainment at the gala.",
     thumbnail: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
-    title: "Media Gala - Behind the Scenes",
+    title: "Reel - 4",
     driveId: "1iol3U8Nla7xcu-aQfx4d8NoAM4bo71ag",
-    category: "Media Gala",
+    category: "Reel",
     description: "Candid footage, production crew setups, interviews, and attendees' feedback behind the scenes.",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 6,
+    title: "Ad - 1",
+    driveId: "1LrLkEm6JSnN2cW68U2ZK_bt7h59DugQ_",
+    category: "Ads",
+    description: "Commercial brand advertisement campaign capturing product features and visual storytelling.",
+    thumbnail: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 7,
+    title: "Ad - 2",
+    driveId: "1wm9RHivSjBB9rKAsMIHOGxFmxHRgoEOY",
+    category: "Ads",
+    description: "Creative promotional video highlighting brand values, modern transitions, and high-impact design.",
+    thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 8,
+    title: "Ad - 3",
+    driveId: "1qoRaoFh0D_IkigpEa9Pri9bTv4eTjiHt",
+    category: "Ads",
+    description: "Marketing campaign ad emphasizing user engagement, cinematic sound design, and sharp edits.",
+    thumbnail: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 9,
+    title: "Ad - 4",
+    driveId: "11E1NeYHfqOHHUuY2WbhFWxA-Vnx3CClM",
+    category: "Ads",
+    description: "Short promotional spot focusing on high-definition close-up captures and product aesthetics.",
+    thumbnail: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 10,
+    title: "Ad - 5",
+    driveId: "1WKHFLrN0ClEPNvaNuAztPlFPjE4U7lTt",
+    category: "Ads",
+    description: "Campaign teaser highlighting creative media elements, typography layouts, and promotional messaging.",
+    thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
 const VideoSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [activeCategory, setActiveCategory] = useState<"All" | "Ads" | "Media Gala">("All");
+  const [activeCategory, setActiveCategory] = useState<"All" | "Ads" | "Media Gala" | "Reel">("All");
   const [activeVideo, setActiveVideo] = useState<VideoItem | null>(null);
 
   const filteredVideos = useMemo(() => {
@@ -97,7 +137,7 @@ const VideoSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex justify-center gap-3 mb-12"
         >
-          {["All", "Ads", "Media Gala"].map((category) => (
+          {["All", "Ads", "Media Gala", "Reel"].map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category as any)}
