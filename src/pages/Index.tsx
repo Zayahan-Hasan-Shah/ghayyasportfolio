@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection";
 import InfluencerSection from "../components/InfluencerSection";
 import PortfolioSection from "../components/PortfolioSection";
 import ReportsSection from "../components/ReportsSection";
+import VideoSection from "../components/VideoSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSections";
@@ -24,6 +25,7 @@ const Index = () => {
         <BrandSection />
         <PortfolioSection />
         <ReportsSection />
+        <VideoSection />
         <TestimonialsSection />
         <ContactSection />
         {/* <BlogSection /> */}
